@@ -5,27 +5,20 @@ using System.Text;
 
 namespace Objektgenerator.Classes
 {
-    class ObjectgeneratorTest
+    class Objectgenerator
     {
 
         public T GetNewObject<T>() where T : new()
         {
-            // T t = new T();
             return new T();
         }
 
         public List<T> GetNewObjects<T>(int amountOfObjekts) where T : new()
         {
             List <T> objects = new List<T>();
-
-           
+                       
             for (int i = 0; i < amountOfObjekts; i++)
-            {
-                
-
-               // objects.Add(new T());
-
-
+            {              
                 objects.Add(GetNewObject<T>());
             }
 
@@ -42,16 +35,14 @@ namespace Objektgenerator.Classes
         public List<T> GetAnimalsWithName<T>(object[] names) where T : Animal
         {
             List<T> animals = new List<T>();
+            
             foreach (var name in names)
             {
-                animals. Add( (T)Activator.CreateInstance(typeof(T), name));
+                animals.Add( (T)Activator.CreateInstance(typeof(T), name));
             }
 
             return animals;
         }
-
-
-
 
     }
 }

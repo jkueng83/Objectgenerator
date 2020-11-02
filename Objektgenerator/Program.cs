@@ -18,24 +18,23 @@ namespace Objektgenerator
                 Die Methoden haben ein where Constraint (https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters) welcher "new()" definiert, das schränkt die zu erzeugenden Objekte auf solche ein, welche einen Parameterlosen Konstruktor besitzen.
                 Zusatz: wer auch Objekte generisch erstellen können möchte mit Parametern im Konstruktor kann das diesem StackOverflow Artikel entnehmen.
              */
+                       
 
-            
+            Objectgenerator objectgenerator = new Objectgenerator();
 
-            ObjectgeneratorTest og = new ObjectgeneratorTest();
+            var car = objectgenerator.GetNewObject<Car>();
 
-            var car = og.GetNewObject<Car>();
+            var cars = objectgenerator.GetNewObjects<Car>(7);
 
-            var cars = og.GetNewObjects<Car>(7);
+            var tiger = objectgenerator.GetNewObject<Tiger>();
+            var tigers = objectgenerator.GetNewObjects<Tiger>(17);
 
-            var tiger = og.GetNewObject<Tiger>();
-            var tigers = og.GetNewObjects<Tiger>(17);
-
-            var monkeys = og.GetNewObjects<Monkey>(5);
+            var monkeys = objectgenerator.GetNewObjects<Monkey>(5);
 
 
-            var monkey = og.GetNewObjectAnimal<Monkey>(); // Car geht nicht, da es nicht von Animal erbt. Tiger und Monkey sind möglich
+            var monkey = objectgenerator.GetNewObjectAnimal<Monkey>(); // Car geht nicht, da es nicht von Animal erbt. Tiger und Monkey sind möglich
 
-            var tigersWithName = og.GetAnimalsWithName<Tiger>( new object[] { "Johannes", "Emma", "Helga", "Lukas"});
+            var tigersWithName = objectgenerator.GetAnimalsWithName<Tiger>( new object[] { "Johannes", "Emma", "Helga", "Lukas"});
 
             Console.ReadLine();
                         
