@@ -27,10 +27,10 @@ namespace Objektgenerator
             var cars = objectgenerator.GetNewObjects<Car>(7);
 
             var tiger = objectgenerator.GetNewObject<Tiger>();
+            
             var tigers = objectgenerator.GetNewObjects<Tiger>(17);
 
             var monkeys = objectgenerator.GetNewObjects<Monkey>(5);
-
 
             var monkey = objectgenerator.GetNewObjectAnimal<Monkey>(); // Car geht nicht, da es nicht von Animal erbt. Tiger und Monkey sind möglich
 
