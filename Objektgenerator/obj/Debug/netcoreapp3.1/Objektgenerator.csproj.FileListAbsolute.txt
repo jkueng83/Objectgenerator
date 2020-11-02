@@ -1,0 +1,13 @@
+C:\03_Coding\02 Projects\C#\Objektgenerator\Objektgenerator\bin\Debug\netcoreapp3.1\Objektgenerator.exe
+C:\03_Coding\02 Projects\C#\Objektgenerator\Objektgenerator\bin\Debug\netcoreapp3.1\Objektgenerator.deps.json
+C:\03_Coding\02 Projects\C#\Objektgenerator\Objektgenerator\bin\Debug\netcoreapp3.1\Objektgenerator.runtimeconfig.json
+C:\03_Coding\02 Projects\C#\Objektgenerator\Objektgenerator\bin\Debug\netcoreapp3.1\Objektgenerator.runtimeconfig.dev.json
+C:\03_Coding\02 Projects\C#\Objektgenerator\Objektgenerator\bin\Debug\netcoreapp3.1\Objektgenerator.dll
+C:\03_Coding\02 Projects\C#\Objektgenerator\Objektgenerator\bin\Debug\netcoreapp3.1\Objektgenerator.pdb
+C:\03_Coding\02 Projects\C#\Objektgenerator\Objektgenerator\obj\Debug\netcoreapp3.1\Objektgenerator.csprojAssemblyReference.cache
+C:\03_Coding\02 Projects\C#\Objektgenerator\Objektgenerator\obj\Debug\netcoreapp3.1\Objektgenerator.AssemblyInfoInputs.cache
+C:\03_Coding\02 Projects\C#\Objektgenerator\Objektgenerator\obj\Debug\netcoreapp3.1\Objektgenerator.AssemblyInfo.cs
+C:\03_Coding\02 Projects\C#\Objektgenerator\Objektgenerator\obj\Debug\netcoreapp3.1\Objektgenerator.csproj.CoreCompileInputs.cache
+C:\03_Coding\02 Projects\C#\Objektgenerator\Objektgenerator\obj\Debug\netcoreapp3.1\Objektgenerator.dll
+C:\03_Coding\02 Projects\C#\Objektgenerator\Objektgenerator\obj\Debug\netcoreapp3.1\Objektgenerator.pdb
+C:\03_Coding\02 Projects\C#\Objektgenerator\Objektgenerator\obj\Debug\netcoreapp3.1\Objektgenerator.genruntimeconfig.cache
