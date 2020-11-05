@@ -18,7 +18,9 @@ namespace Objektgenerator
                 Die Methoden haben ein where Constraint (https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters) welcher "new()" definiert, das schränkt die zu erzeugenden Objekte auf solche ein, welche einen Parameterlosen Konstruktor besitzen.
                 Zusatz: wer auch Objekte generisch erstellen können möchte mit Parametern im Konstruktor kann das diesem StackOverflow Artikel entnehmen.
              */
-                       
+
+            
+
 
             Objectgenerator objectgenerator = new Objectgenerator();
 
@@ -35,6 +37,26 @@ namespace Objektgenerator
             var monkey = objectgenerator.GetNewObjectAnimal<Monkey>(); // Car geht nicht, da es nicht von Animal erbt. Tiger und Monkey sind möglich
 
             var tigersWithName = objectgenerator.GetAnimalsWithName<Tiger>( new object[] { "Johannes", "Emma", "Helga", "Lukas"});
+
+
+            // Hier noch ein paar Konvertierungs Beispiele
+
+            var myConverter = new DataTypeConverter();
+            var myInt = myConverter.ConvertMyType<int>("12344");
+            var myString = myConverter.ConvertMyType<string>(12344);
+
+            var myValue = "1234";
+            var myBetterInt = Convert.ToInt32(myValue);
+
+            int.TryParse(myValue?.ToString(), out var myBetterBetterInt); // ? bei myValue? --> wird nur ausgeführt wenn nicht null
+
+            if (myBetterBetterInt > 19)
+            {
+
+            }
+            var int1 = (int)Convert.ChangeType("1232", typeof(int));
+
+
 
             Console.ReadLine();
                         
